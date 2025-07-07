@@ -5,6 +5,7 @@ import OurApproachSection from "./components/features";
 import FeaturedProjectsSection from "./components/Projects";
 import LatestBlogPostsSection from "./components/Blog"; 
 import CallToActionSection from "./components/Cta"; 
+import Footer from "./components/Footer";
 import "./App.css";
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
       <FeaturedProjectsSection />
       <LatestBlogPostsSection />
       <CallToActionSection />
+      <Footer />
       {/* Add any additional sections or components here */}
     </>
   );
