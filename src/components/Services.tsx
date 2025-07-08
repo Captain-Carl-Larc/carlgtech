@@ -1,4 +1,5 @@
-import { Globe, LayoutTemplate, Database, Code } from "lucide-react"; // Importing icons from lucide-react
+import { Globe, LayoutTemplate, Database, Code } from "lucide-react";
+import { Link } from "react-router-dom"; // Import Link
 
 function ServicesSection() {
   const services = [
@@ -62,8 +63,8 @@ function ServicesSection() {
               <p className="text-gray-600 dark:text-gray-400 mb-6 flex-grow">
                 {service.description}
               </p>
-              <a
-                href={service.link}
+              <Link
+                to={service.link}
                 className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-full shadow-sm text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition duration-150 ease-in-out"
               >
                 Learn More
@@ -79,7 +80,7 @@ function ServicesSection() {
                     clipRule="evenodd"
                   ></path>
                 </svg>
-              </a>
+              </Link>
             </div>
           ))}
         </div>
