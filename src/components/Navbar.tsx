@@ -18,12 +18,12 @@ function Navbar() {
     setIsDropdownOpen(false); // Also close the dropdown if open
   };
 
-  const toggleDropdown = (e: React.MouseEvent<HTMLButtonElement>) => {
-    // Prevent the button click from also triggering the parent menu close
-    // if the dropdown is within a mobile menu item that might also have a closeMenu handler
-    e.stopPropagation();
-    setIsDropdownOpen(!isDropdownOpen);
-  };
+  // const toggleDropdown = (e: React.MouseEvent<HTMLButtonElement>) => {
+  //   // Prevent the button click from also triggering the parent menu close
+  //   // if the dropdown is within a mobile menu item that might also have a closeMenu handler
+  //   e.stopPropagation();
+  //   setIsDropdownOpen(!isDropdownOpen);
+  // };
 
   return (
     <nav className="bg-white border-gray-200 dark:bg-gray-900 dark:border-gray-700">
@@ -36,10 +36,10 @@ function Navbar() {
           <img
             src="https://flowbite.com/docs/images/logo.svg"
             className="h-8"
-            alt="Flowbite Logo"
+            alt="CarlgTech Logo"
           />
           <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
-            Flowbite
+            CarlgTech
           </span>
         </Link>
         <button
@@ -83,8 +83,8 @@ function Navbar() {
                 Home
               </Link>
             </li>
-            <li>
-              <button
+          {  <li>
+              {/* {<button
                 id="dropdownNavbarLink"
                 className="flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent"
                 onClick={toggleDropdown} // Toggle dropdown without closing main menu
@@ -105,9 +105,9 @@ function Navbar() {
                     d="m1 1 4 4 4-4"
                   />
                 </svg>
-              </button>
+              </button>} */}
               {/* Dropdown menu */}
-              <div
+             {/* { <div
                 id="dropdownNavbar"
                 className={`z-10 ${
                   isDropdownOpen ? "block" : "hidden"
@@ -154,9 +154,9 @@ function Navbar() {
                     Sign out
                   </Link>
                 </div>
-              </div>
-            </li>
-            <li>
+              </div>} */}
+            </li>}
+           {/* { <li>
               <Link
                 to="/services"
                 className="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
@@ -164,8 +164,8 @@ function Navbar() {
               >
                 Services
               </Link>
-            </li>
-            <li>
+            </li>} */}
+            {/* {<li>
               <Link
                 to="/pricing"
                 className="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
@@ -173,7 +173,7 @@ function Navbar() {
               >
                 Pricing
               </Link>
-            </li>
+            </li>} */}
             <li>
               <Link
                 to="/contact"
