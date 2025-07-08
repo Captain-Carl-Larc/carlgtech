@@ -1,4 +1,5 @@
 import { ExternalLink } from "lucide-react"; // Icon for external links
+import { Link } from "react-router-dom"; // Import Link
 
 function FeaturedProjectsSection() {
   const projects = [
@@ -75,15 +76,15 @@ function FeaturedProjectsSection() {
                 <p className="text-gray-600 dark:text-gray-400 mb-4 flex-grow">
                   {project.description}
                 </p>
-                <a
-                  href={project.link}
+                <Link
+                  to={project.link}
                   className="inline-flex items-center text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-500 font-medium transition duration-150 ease-in-out"
                   target="_blank" // Open in new tab
                   rel="noopener noreferrer" // Security best practice for target="_blank"
                 >
                   View Project
                   <ExternalLink className="ml-2 w-5 h-5" />
-                </a>
+                </Link>
               </div>
             </div>
           ))}

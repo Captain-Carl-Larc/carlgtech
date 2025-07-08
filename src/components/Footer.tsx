@@ -1,4 +1,5 @@
-import { Mail, Phone, MapPin, Facebook, Twitter, Linkedin } from "lucide-react"; // Icons for contact and social media
+import { Mail, Phone, MapPin, Facebook, Twitter, Linkedin } from "lucide-react";
+import { Link } from "react-router-dom"; // Add this import
 
 function Footer() {
   return (
@@ -7,15 +8,15 @@ function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Column 1: Brand Info */}
           <div className="col-span-1 md:col-span-1">
-            <a
-              href="#"
+            <Link
+              to="/"
               className="flex items-center space-x-2 rtl:space-x-reverse mb-4"
             >
               {/* Using a simple text logo for now, replace with actual brand logo if available */}
               <span className="self-center text-3xl font-bold whitespace-nowrap text-white">
                 carlgtech
               </span>
-            </a>
+            </Link>
             <p className="text-gray-400 text-sm">
               Your partner for innovative web and software solutions.
             </p>
@@ -28,16 +29,16 @@ function Footer() {
             </h3>
             <ul className="space-y-2">
               <li>
-                <a
-                  href="#"
+                <Link
+                  to="/"
                   className="text-gray-400 hover:text-blue-500 transition-colors duration-200"
                 >
                   Home
-                </a>
+                </Link>
               </li>
               <li>
                 <a
-                  href="#services"
+                  href="/#services"
                   className="text-gray-400 hover:text-blue-500 transition-colors duration-200"
                 >
                   Services
@@ -51,21 +52,14 @@ function Footer() {
                   Portfolio
                 </a>
               </li>
+
               <li>
-                <a
-                  href="#latest-blog-posts"
-                  className="text-gray-400 hover:text-blue-500 transition-colors duration-200"
-                >
-                  Blog
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#call-to-action"
+                <Link
+                  to="/contact"
                   className="text-gray-400 hover:text-blue-500 transition-colors duration-200"
                 >
                   Contact
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -91,13 +85,13 @@ function Footer() {
                   href="tel:+1234567890"
                   className="text-gray-400 hover:text-blue-500 transition-colors duration-200"
                 >
-                  +1 (234) 567-890
+                  +254 (790) 070-100
                 </a>
               </li>
               <li className="flex items-start">
                 <MapPin className="w-5 h-5 text-blue-500 mr-3 mt-1" />
                 <span className="text-gray-400">
-                  123 Tech Lane, Innovation City, TX 78701
+                  Thika Road, Kahawa Sukari, 00100 Nairobi, Kenya
                 </span>
               </li>
             </ul>
